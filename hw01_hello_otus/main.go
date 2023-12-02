@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/golang/example/stringutil"
+	R "golang.org/x/example/hello/reverse"
 )
 
 func main() {
-	fmt.Printf(stringutil.Reverse("Hello, OTUS!"))
+	fmt.Printf(R.String("Hello, OTUS!"))
 }
