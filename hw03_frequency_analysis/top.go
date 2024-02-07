@@ -5,11 +5,11 @@ import (
 	"strings"
 )
 
-func Top10(raw_text string) []string {
-	words_list := count(raw_text)
-	rate_list := rateBy(words_list)
+func Top10(rawText string) []string {
+	wordsList := count(rawText)
+	rateList := rateBy(wordsList)
 
-	return ret_10_words(rate_list, 10)
+	return ret10words(rateList, 10)
 }
 
 func count(text string) map[string]int {
@@ -19,7 +19,7 @@ func count(text string) map[string]int {
 	for _, word := range words {
 		_, exists := wordCount[word]
 		if exists {
-			wordCount[word] += 1
+			wordCount[word]++
 		} else {
 			wordCount[word] = 1
 		}
@@ -39,7 +39,7 @@ func rateBy(words map[string]int) pairs {
 	return pairs
 }
 
-func ret_10_words(p pairs, n int) []string {
+func ret10words(p pairs, n int) []string {
 	if len(p) == 0 {
 		return []string{}
 	}
