@@ -1,10 +1,10 @@
-package hw02unpackstring
+package hw02_unpack_string //nolint:all
 
 import (
 	"errors"
 	"testing"
 
-	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/require" //nolint:all
 )
 
 func TestUnpack(t *testing.T) {
@@ -16,6 +16,8 @@ func TestUnpack(t *testing.T) {
 		{input: "abccd", expected: "abccd"},
 		{input: "", expected: ""},
 		{input: "aaa0b", expected: "aab"},
+		{input: "a2b", expected: "aab"},
+		{input: "a4", expected: "aaaa"},
 		// uncomment if task with asterisk completed
 		// {input: `qwe\4\5`, expected: `qwe45`},
 		// {input: `qwe\45`, expected: `qwe44444`},
