@@ -3,7 +3,7 @@ package hw03frequencyanalysis
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/require" //nolint:all
 )
 
 // Change to true if needed.
@@ -88,7 +88,7 @@ func TestTop10(t *testing.T) {
 	})
 
 	t.Run("positive test2", func(t *testing.T) {
-		if taskWithAsteriskIsCompleted {
+		if taskWithAsteriskIsCompleted { //nolint:all
 			expected := []string{
 				"с",            // 8
 				"10-ю",         // 6
@@ -120,3 +120,4 @@ func TestTop10(t *testing.T) {
 	})
 }
 
+//nolint:all

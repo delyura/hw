@@ -72,3 +72,4 @@ func (p pairs) Swap(i, j int) {
 	p[i], p[j] = p[j], p[i]
 }
 
+//nolint:all
