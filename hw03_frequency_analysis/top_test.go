@@ -119,5 +119,3 @@ func TestTop10(t *testing.T) {
 		}
 	})
 }
-
-//nolint:all

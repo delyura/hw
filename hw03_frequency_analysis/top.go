@@ -71,5 +71,3 @@ func (p pairs) Less(i, j int) bool {
 func (p pairs) Swap(i, j int) {
 	p[i], p[j] = p[j], p[i]
 }
-
-//nolint:all
