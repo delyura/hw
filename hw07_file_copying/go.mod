@@ -1,6 +1,6 @@
 module github.com/delyura/hw/hw07_file_copying
 
-go 1.22.1 //nolint:all
+go 1.19
 
 require (
 	github.com/VividCortex/ewma v1.2.0 // indirect
