@@ -1,6 +1,6 @@
 module github.com/delyura/hw/hw07_file_copying
 
-go 1.23
+go 1.22.1 //nolint:all
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
