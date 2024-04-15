@@ -1,4 +1,4 @@
-module github.com/delyura/hw/hw07_file_copying
+module github.com/delyura/hw/hw08_envdir_tool
 
 go 1.22.1 //nolint:all
 
