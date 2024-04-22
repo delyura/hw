@@ -1,6 +1,6 @@
 module github.com/delyura/hw/hw09_struct_validator
 
-go 1.22.1
+go 1.22.1 //nolint:all
 
 require github.com/stretchr/testify v1.9.0
 
