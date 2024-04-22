@@ -1,4 +1,4 @@
-package hw09_struct_validator //nolint:golint,stylecheck
+package hw09_struct_validator //nolint:all
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/stretchr/testify/assert" //nolint:golint
+	"github.com/stretchr/testify/assert" //nolint:all
 )
 
 type (
