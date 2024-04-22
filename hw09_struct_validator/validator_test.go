@@ -1,4 +1,4 @@
-package hw09structvalidator
+package hw09_struct_validator
 
 import (
 	"encoding/json"
