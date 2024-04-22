@@ -1,4 +1,4 @@
-package hw09_struct_validator //nolint:all
+package main
 
 import (
 	"encoding/json"
