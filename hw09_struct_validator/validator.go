@@ -1,4 +1,4 @@
-package main
+package hw09structvalidator //nolint:all
 
 import (
 	"errors"
