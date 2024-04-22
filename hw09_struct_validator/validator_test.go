@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/stretchr/testify/assert" //nolint:golint,stylecheck
+	"github.com/stretchr/testify/assert" //nolint:golint
 )
 
 type (
