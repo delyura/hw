@@ -1,4 +1,4 @@
-package hw10_program_optimization
+package hw10programoptimization
 
 import (
 	"bufio"
