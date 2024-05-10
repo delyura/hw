@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/require" //nolint:all
 )
 
 func TestTelnetClient(t *testing.T) {
@@ -61,5 +61,13 @@ func TestTelnetClient(t *testing.T) {
 		}()
 
 		wg.Wait()
+	})
+
+	t.Run("host/port not exist", func(t *testing.T) {
+		in := &bytes.Buffer{}
+		out := &bytes.Buffer{}
+		timeout := 10 * time.Second
+		telnetclient := NewTelnetClient("", timeout, io.NopCloser(in), out)
+		require.Error(t, telnetclient.Connect())
 	})
 }
